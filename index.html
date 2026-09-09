@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狐妖小红娘漫画-狐妖小红娘漫画全集阅读与角色剧情指南</title>
+    <meta name="description" content="狐妖小红娘漫画是一部以中国古典神话为背景的玄幻恋爱漫画，本站提供狐妖小红娘漫画剧情介绍、主要角色解析、篇章顺序、阅读指南与常见问题解答，帮助你快速了解这部经典作品。">
+    <meta name="keywords" content="狐妖小红娘漫画,狐妖小红娘,漫画阅读,涂山苏苏,白月初,东方月初,涂山红红,漫画指南">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #fdf8f2;
+            color: #2d2a26;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #e63946 0%, #c1121f 60%, #a4133c 100%);
+            color: #fff;
+            padding: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            position: relative;
+            z-index: 10;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 18px 0;
+        }
+        .brand h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin: 0;
+        }
+        .brand p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 4px;
+            letter-spacing: 2px;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s, opacity 0.3s;
+        }
+        .main-nav a:hover {
+            border-bottom-color: #ffd166;
+            opacity: 0.9;
+        }
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(145deg, #f4e9d8 0%, #f9e0d2 100%);
+            padding: 60px 0;
+            border-bottom: 1px solid #e8d5c0;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-content h2 {
+            font-size: 2.4rem;
+            color: #a4133c;
+            margin-bottom: 16px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+        .hero-content h2 span {
+            color: #e63946;
+            border-bottom: 4px solid #ffd166;
+            padding-bottom: 2px;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #4a3f35;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        .hero-badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .badge {
+            background: #fff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #a4133c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #f0c9b8;
+        }
+        .hero-cover {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            text-align: center;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            border: 1px solid #f0d9c8;
+        }
+        .hero-cover h3 {
+            font-size: 1.5rem;
+            color: #2d2a26;
+            margin-bottom: 10px;
+        }
+        .hero-cover .quote {
+            font-style: italic;
+            color: #6b5a4e;
+            margin: 16px 0;
+            font-size: 1rem;
+        }
+        .hero-cover .btn {
+            display: inline-block;
+            background: #e63946;
+            color: #fff;
+            padding: 10px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 14px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .hero-cover .btn:hover {
+            background: #c1121f;
+            transform: translateY(-2px);
+        }
+        /* 内容区通用 */
+        .section {
+            padding: 50px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #a4133c;
+            font-weight: 800;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #7a6a5a;
+            margin-bottom: 36px;
+            font-size: 1rem;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #ffd166;
+            margin: 12px auto 0;
+            border-radius: 4px;
+        }
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+            margin-top: 10px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 26px 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            border: 1px solid #f0e0d2;
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 14px;
+        }
+        .card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #5a4e44;
+        }
+        /* 篇章时间线 */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #e63946, #ffd166);
+            border-radius: 3px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 36px;
+            background: #fff;
+            padding: 20px 24px;
+            border-radius: 14px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+            border: 1px solid #f0e0d2;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 28px;
+            width: 14px;
+            height: 14px;
+            background: #e63946;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 2px #e63946;
+        }
+        .timeline-item h3 {
+            color: #a4133c;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .timeline-item .meta {
+            font-size: 0.85rem;
+            color: #8a7a6a;
+            margin-bottom: 10px;
+        }
+        .timeline-item p {
+            font-size: 0.95rem;
+            color: #4a3f35;
+        }
+        /* 角色卡片 */
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+        .char-card {
+            background: #fff;
+            border-radius: 16px;
+            text-align: center;
+            padding: 24px 16px;
+            border: 1px solid #f0e0d2;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .char-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .char-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #f4a261, #e76f51);
+            margin: 0 auto 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            font-weight: bold;
+        }
+        .char-card:nth-child(2) .char-avatar { background: linear-gradient(145deg, #457b9d, #1d3557); }
+        .char-card:nth-child(3) .char-avatar { background: linear-gradient(145deg, #e63946, #a4133c); }
+        .char-card:nth-child(4) .char-avatar { background: linear-gradient(145deg, #2a9d8f, #264653); }
+        .char-card:nth-child(5) .char-avatar { background: linear-gradient(145deg, #f4a261, #d00000); }
+        .char-card:nth-child(6) .char-avatar { background: linear-gradient(145deg, #b5838d, #6d6875); }
+        .char-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        .char-card .role {
+            font-size: 0.85rem;
+            color: #e63946;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .char-card p {
+            font-size: 0.88rem;
+            color: #5a4e44;
+        }
+        /* 阅读指南步骤 */
+        .steps {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .step {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 24px;
+            background: #fff;
+            padding: 18px 20px;
+            border-radius: 14px;
+            border-left: 5px solid #e63946;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .step-num {
+            background: #e63946;
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+        .step p {
+            font-size: 0.95rem;
+            color: #5a4e44;
+        }
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            border: 1px solid #f0e0d2;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1.05rem;
+            background: #fef9f3;
+            border-bottom: 1px solid transparent;
+            transition: background 0.2s;
+            position: relative;
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            color: #e63946;
+            transition: transform 0.2s;
+        }
+        .faq-item.active .faq-question::after {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            font-size: 0.95rem;
+            color: #4a3f35;
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 24px 20px;
+            max-height: 300px;
+        }
+        /* 相关主题 */
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+        }
+        .related-tag {
+            background: #fff;
+            border: 1px solid #e8d5c0;
+            color: #6b5a4e;
+            padding: 8px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.25s;
+        }
+        .related-tag:hover {
+            background: #e63946;
+            color: #fff;
+            border-color: #e63946;
+            transform: translateY(-2px);
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #2d2a26;
+            color: #c9beb3;
+            padding: 30px 0;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .site-footer p {
+            margin-bottom: 6px;
+        }
+        .site-footer a {
+            color: #ffd166;
+            text-decoration: none;
+        }
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+            .header-inner {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .main-nav ul {
+                justify-content: center;
+                gap: 18px;
+            }
+        }
+        @media (max-width: 600px) {
+            .section {
+                padding: 36px 0;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .brand h1 {
+                font-size: 1.5rem;
+            }
+            .hero-content h2 {
+                font-size: 1.5rem;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .timeline {
+                padding-left: 20px;
+            }
+            .timeline-item::before {
+                left: -23px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>狐妖小红娘漫画</h1>
+                <p>前世今生 · 红线牵缘</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro">作品简介</a></li>
+                    <li><a href="#story">篇章剧情</a></li>
+                    <li><a href="#characters">主要角色</a></li>
+                    <li><a href="#guide">阅读指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏 -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h2>跨越千年的<span>人妖之恋</span></h2>
+                    <p>《狐妖小红娘》是一部以中国古典神话与民间传说为灵感创作的玄幻恋爱漫画。故事围绕狐妖“红娘”涂山苏苏与道士白月初展开，讲述他们为前世恋人牵线续缘的冒险旅程。漫画以“轮回转世”与“情缘”为核心，融合了战斗、喜剧、催泪与深刻的人性探讨，成为国漫中的现象级作品。</p>
+                    <p>无论你是初次接触还是想重温经典，这里都能找到你需要的信息。</p>
+                    <div class="hero-badges">
+                        <span class="badge">玄幻 · 恋爱 · 战斗</span>
+                        <span class="badge">已连载多年</span>
+                        <span class="badge">动画化作品</span>
+                    </div>
+                </div>
+                <div class="hero-cover">
+                    <h3>涂山苏苏</h3>
+                    <p class="quote">“我苏苏，一定会成为最优秀的红线仙！”</p>
+                    <p><strong>关键词：</strong>转世、红线仙、纯爱</p>
+                    <a href="#story" class="btn">开始了解故事</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品简介 -->
+        <section class="section" id="intro">
+            <div class="container">
+                <h2 class="section-title">狐妖小红娘漫画是什么？</h2>
+                <p class="section-subtitle">一部关于“转世续缘”的东方奇幻物语</p>
+                <div style="max-width: 850px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); border: 1px solid #f0e0d2;">
+                    <p style="margin-bottom: 16px;">在《狐妖小红娘》的世界观中，人与妖可以相爱，但人类的寿命有限，妖却可以活数百年甚至更久。为了让深爱的人类伴侣在转世后找回前世记忆，狐妖一族的“红线仙”便承担起为这些有情人牵线搭桥的职责。</p>
+                    <p style="margin-bottom: 16px;">故事的主角涂山苏苏是涂山狐妖一族的小狐妖，她梦想成为优秀的红线仙。在道士白月初的陪伴与帮助下，他们一起完成各种“续缘任务”，逐渐揭开前世今生的秘密，以及涂山红红、东方月初等角色背后尘封的往事。</p>
+                    <p>漫画以其细腻的情感刻画、宏大的世界观和跌宕起伏的剧情收获了海量读者。作品中既有轻松搞笑的日常，也有让人泪目的虐心情节，对“情”字的诠释贯穿始终。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 篇章剧情 -->
+        <section class="section" id="story" style="background: #faf3ea;">
+            <div class="container">
+                <h2 class="section-title">篇章剧情脉络</h2>
+                <p class="section-subtitle">从下沙篇到金晨曦篇，主线不断深入</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>下沙篇</h3>
+                        <div class="meta">开篇 · 西西域</div>
+                        <p>狐妖苏苏与白月初首次搭档，为西西域沙狐皇子“梵云飞”和转世恋人“厉雪扬”续缘。此篇章奠定了“人妖转世续缘”的核心设定，也引出了涂山与一气道盟的背景。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>王权篇</h3>
+                        <div class="meta">经典 · 道门兵人</div>
+                        <p>讲述王权富贵与蜘蛛精清瞳的故事。王权富贵作为道门最强兵人，在遇到清瞳后逐渐找回自我，最终选择离开家族守护真爱。此篇在读者中拥有极高人气。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>月红篇</h3>
+                        <div class="meta">核心 · 前世羁绊</div>
+                        <p>揭开涂山红红与东方月初的过往。作为五百年前人妖两界的传奇人物，他们的故事是整部作品的情感基石，也是理解涂山苏苏身份的关键篇章。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>千颜篇</h3>
+                        <div class="meta">颜如玉 · 律笺文</div>
+                        <p>采花大盗颜如玉与捕快律笺文之间的感人故事。看似对立的身份背后，隐藏着牺牲与成全的深情，让许多读者为之动容。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>南国篇</h3>
+                        <div class="meta">平丘月初 · 欢都落兰</div>
+                        <p>故事转向南国，围绕东方月初的转世之一平丘月初与南国公主欢都落兰展开，探讨了“转世之人是否还是同一个人”的哲学命题，引发深层思考。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>竹业篇与后续</h3>
+                        <div class="meta">扩展 · 金晨曦 · 沐雪</div>
+                        <p>竹业篇讲述了东方月初父母辈的往事，进一步丰富世界观。之后的金晨曦篇、沐雪篇等继续推进主线，揭示黑狐的阴谋与涂山一族的秘密。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要角色 -->
+        <section class="section" id="characters">
+            <div class="container">
+                <h2 class="section-title">主要角色一览</h2>
+                <p class="section-subtitle">他们共同构成了《狐妖小红娘》的动人世界</p>
+                <div class="char-grid">
+                    <div class="char-card">
+                        <div class="char-avatar">苏</div>
+                        <h3>涂山苏苏</h3>
+                        <div class="role">红线仙（见习）</div>
+                        <p>涂山狐妖一族的小狐妖，天真烂漫，梦想成为优秀红线仙。真实身份与涂山红红密切相关。</p>
+                    </div>
+                    <div class="char-card">
+                        <div class="char-avatar">白</div>
+                        <h3>白月初</h3>
+                        <div class="role">道士 · 东方月初转世</div>
+                        <p>一气道盟的“问题道士”，贪吃怕麻烦，但关键时刻无比可靠。与苏苏搭档执行续缘任务。</p>
+                    </div>
+                    <div class="char-card">
+                        <div class="char-avatar">红</div>
+                        <h3>涂山红红</h3>
+                        <div class="role">涂山之主 · 狐妖之王</div>
+                        <p>涂山最强的狐妖，五百年前的传奇人物。与东方月初的约定贯穿整个故事的核心。</p>
+                    </div>
+                    <div class="char-card">
+                        <div class="char-avatar">东</div>
+                        <h3>东方月初</h3>
+                        <div class="role">东方灵族 · 人族强者</div>
+                        <p>五百年前的人族天才，为追求人妖和平的理想而奋斗。他的转世与涂山苏苏的缘分紧密相连。</p>
+                    </div>
+                    <div class="char-card">
+                        <div class="char-avatar">雅</div>
+                        <h3>涂山雅雅</h3>
+                        <div class="role">涂山二当家</div>
+                        <p>涂山红红的妹妹，外表高冷，实则非常关心姐姐和苏苏。拥有强大的冰系妖力。</p>
+                    </div>
+                    <div class="char-card">
+                        <div class="char-avatar">容</div>
+                        <h3>涂山容容</h3>
+                        <div class="role">涂山三当家 · 智囊</div>
+                        <p>涂山狐妖中最聪明的存在，负责涂山的事务与情报，是苏苏和白月初的可靠后盾。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section class="section" id="guide" style="background: #faf3ea;">
+            <div class="container">
+                <h2 class="section-title">漫画阅读指南</h2>
+                <p class="section-subtitle">如何开始阅读狐妖小红娘漫画？</p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <div>
+                            <h3>按章节顺序阅读</h3>
+                            <p>建议从“下沙篇”开始，按照漫画的连载顺序阅读。虽然单个篇章相对独立，但主线伏笔和人物关系会随剧情推进逐渐清晰。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <div>
+                            <h3>关注番外与特别篇</h3>
+                            <p>部分角色故事和背景设定会在番外篇中补充，例如“月红篇”的某些细节。如果时间充裕，番外不要错过。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <div>
+                            <h3>结合动画与漫画</h3>
+                            <p>动画改编对原作有一定删减和调整。如果想了解最完整的剧情，建议以漫画为基底，动画作为辅助体验。</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">4</div>
+                        <div>
+                            <h3>留意世界观设定</h3>
+                            <p>人妖续缘、圈外生物、灵力和妖力等设定贯穿全书。前期有些细节看似随意，后期会变成关键伏笔，阅读时可适当留意。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 优势亮点 -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">这部漫画为何吸引人？</h2>
+                <p class="section-subtitle">不止是恋爱故事，更是关于承诺与成长的寓言</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">💞</div>
+                        <h3>情感刻画深刻</h3>
+                        <p>每个篇章都以“情”为核心，无论是爱情、亲情还是友情，都能引发强烈共鸣。作者对情感的细腻描写让故事极具感染力。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📜</div>
+                        <h3>东方玄幻底蕴</h3>
+                        <p>借鉴《山海经》等典籍，融入道教文化与民间传说，构建了一个充满想象力的“人与妖共存”世界。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎭</div>
+                        <h3>角色立体生动</h3>
+                        <p>没有绝对的好人与坏人，每个角色都有自己的立场与苦衷。即使是配角，也有完整的人物弧光。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🧩</div>
+                        <h3>伏笔回收巧妙</h3>
+                        <p>前期埋下的众多伏笔，在后期逐步揭开。许多看似无关的细节，最终都指向同一个真相，阅读体验极佳。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事项 -->
+        <section class="section" style="background: #faf3ea;">
+            <div class="container">
+                <h2 class="section-title">阅读小提示</h2>
+                <p class="section-subtitle">一些值得提前了解的信息</p>
+                <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 30px 28px; border-radius: 20px; border: 1px solid #f0e0d2;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 10px 0; border-bottom: 1px solid #f5ede4; display: flex; gap: 12px;"><span style="color: #e63946; font-weight: bold;">·</span> 漫画目前仍在连载中，部分章节可能未完结，阅读时请留意当前的剧情进度。</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid #f5ede4; display: flex; gap: 12px;"><span style="color: #e63946; font-weight: bold;">·</span> 由于版权原因，建议通过正规漫画平台阅读，支持作者创作。</li>
+                        <li style="padding: 10px 0; border-bottom: 1px solid #f5ede4; display: flex; gap: 12px;"><span style="color: #e63946; font-weight: bold;">·</span> 部分早期篇章的画风与后期有明显差异，这是连载作品的正常现象，不必因此弃坑。</li>
+                        <li style="padding: 10px 0; display: flex; gap: 12px;"><span style="color: #e63946; font-weight: bold;">·</span> 剧情中存在部分催泪或沉重情节，建议情绪敏感者做好心理准备。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题解答</h2>
+                <p class="section-subtitle">关于狐妖小红娘漫画的疑问，这里为你解答</p>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">狐妖小红娘漫画和动画有什么区别？</div>
+                        <div class="faq-answer">漫画是原作，动画改编自漫画。动画在视觉效果和配音方面有优势，但部分剧情有删减或调整顺序。漫画的细节更丰富，主线推进也更完整，建议两者结合观看。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">涂山苏苏和涂山红红是什么关系？</div>
+                        <div class="faq-answer">漫画中涂山苏苏的身份与涂山红红有密切联系，但具体关系涉及核心剧透。简单来说，苏苏的出现与红红的某个重要决定有关，建议阅读“月红篇”来了解完整真相。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">漫画完结了吗？</div>
+                        <div class="faq-answer">截至目前，漫画仍在连载中。主线剧情已经推进到较深阶段，但尚未正式宣告完结。具体更新进度请以官方发布为准。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">应该从哪里开始看漫画？</div>
+                        <div class="faq-answer">漫画第一话就是故事的起点，建议从第一话开始按顺序阅读。早期画风虽然有些粗糙，但剧情节奏很快，不会让人觉得乏味。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">有哪些特别催泪的篇章？</div>
+                        <div class="faq-answer">不同读者感受不同，但“王权篇”“月红篇”和“千颜篇”被提及最多。这些篇章的情感冲突集中，人物命运转折明显，是公认的泪点高发区。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 相关主题 -->
+        <section class="section" style="padding-top: 20px;">
+            <div class="container">
+                <h2 class="section-title" style="font-size: 1.5rem;">你可能还想了解</h2>
+                <div class="related-links">
+                    <a href="#" class="related-tag">狐妖小红娘动画</a>
+                    <a href="#" class="related-tag">涂山苏苏手办</a>
+                    <a href="#" class="related-tag">国漫推荐</a>
+                    <a href="#" class="related-tag">玄幻恋爱漫画</a>
+                    <a href="#" class="related-tag">东方月初角色分析</a>
+                    <a href="#" class="related-tag">狐妖小红娘壁纸</a>
+                    <a href="#" class="related-tag">转世续缘设定</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 狐妖小红娘漫画爱好者指南 · 本页面仅提供作品介绍与阅读信息</p>
+            <p>尊重知识产权，请通过正规渠道阅读漫画</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">本站与原作作者及官方无隶属关系，内容仅供学习交流</p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ 展开折叠功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(function(item) {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', function() {
+                    // 关闭其他项（可选，保持手风琴效果）
+                    faqItems.forEach(function(otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                      </html>
